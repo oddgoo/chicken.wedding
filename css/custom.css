@@ -1,0 +1,23 @@
+body{
+    background-color: #E8D7BA;
+}
+
+.centered{
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.shadowed{
+  -webkit-filter: drop-shadow(9px 9px 5px rgba(0,0,0,0.5));
+    filter: url(#drop-shadow);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=9, OffY=9, Color='#444')";
+    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=9, OffY=9, Color='#444')";
+
+}
+
+#map{
+
+}
