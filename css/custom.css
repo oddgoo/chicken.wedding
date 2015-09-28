@@ -2,11 +2,26 @@ body{
     background-color: #E8D7BA;
 }
 
+.main-content{
+  width:100%;
+  max-width: 900px;
+  text-align: center;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .centered{
+  width:100%;
   display: block;
   position: relative;
   margin-left: auto;
   margin-right: auto;
+
+}
+
+#map{
+  max-width: 650px;
 
 }
 
@@ -15,9 +30,5 @@ body{
     filter: url(#drop-shadow);
     -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=9, OffY=9, Color='#444')";
     filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=9, OffY=9, Color='#444')";
-
-}
-
-#map{
 
 }
