@@ -28,14 +28,13 @@ body{
 .scroll{
   display: block;
   width:70%;
-  padding: 15px 0px 20px 40px;
-  height: 1500px;
+  padding: 5% 0 5% 5%;
   border-image: url(../img/scrollBG.png) 80 fill stretch;
   border-width: 50px;
 }
 
 .scroll *{
-  width: 80%;
+  width: 100%;
   margin-top: 50px;
 }
 
