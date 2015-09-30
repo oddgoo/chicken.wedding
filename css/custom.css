@@ -25,6 +25,23 @@ body{
 
 }
 
+.scroll{
+  display: block;
+  width:70%;
+  padding: 15px 0px 20px 40px;
+  height: 1500px;
+  border-image: url(../img/scrollBG.png) 80 fill stretch;
+  border-width: 50px;
+}
+
+.scroll *{
+  width: 80%;
+  margin-top: 50px;
+}
+
+#rsvp{
+}
+
 .shadowed{
   -webkit-filter: drop-shadow(9px 9px 5px rgba(0,0,0,0.5));
     filter: url(#drop-shadow);
