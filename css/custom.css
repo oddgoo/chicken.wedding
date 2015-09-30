@@ -1,5 +1,6 @@
 body{
     background-color: #E8D7BA;
+    font-family: 'Lato', sans-serif;
 }
 
 .main-content{
@@ -17,28 +18,81 @@ body{
   position: relative;
   margin-left: auto;
   margin-right: auto;
-
-}
-
-#map{
-  max-width: 650px;
-
 }
 
 .scroll{
   display: block;
   width:70%;
-  padding: 5% 0 5% 5%;
+  padding: 0 0 5% 0%;
   border-image: url(../img/scrollBG.png) 80 fill stretch;
   border-width: 50px;
+  margin-left: -30px
 }
 
-.scroll *{
+.scroll {
   width: 100%;
-  margin-top: 50px;
+  margin-top: 10px;
 }
 
-#rsvp{
+.RSVP *{
+  display: block;
+  text-align: center;
+}
+
+.RSVP h2{
+  color:white;
+  font-size: 8em;
+  font-family: 'Rochester', cursive;
+  font-weight: lighter;
+  margin: 0px;
+  margin-bottom: 30px;
+}
+
+#entry-form .error{
+  display: none;
+  height: auto
+}
+
+.RSVP input,button{
+  -webkit-filter: drop-shadow(3px 3px 5px rgba(0,0,0,0.2));
+  filter: url(#drop-shadow);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=9, OffY=9, Color='#444')";
+  filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=9, OffY=9, Color='#444')";
+}
+
+#entry-form *{
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  width: 70%;
+  height: 40px;
+}
+
+#entry-form button{
+  width: 30%;
+  height: 50px;
+  border-radius: 25px;
+  background-color: white;
+  border: none;
+  margin-top: 40px;
+  color: #989898;
+  font-weight: bold;
+  font-size: 1.5em;
+  font-family: 'Rochester', cursive;
+}
+
+#map{
+  margin-top: 100px;
+  max-width: 650px;
+}
+
+.RSVP #thank-you{
+    font-family: 'Rochester', cursive;
+    color: #e8d7ba;
+    font-size: 4em;
+    display: none;
 }
 
 .shadowed{

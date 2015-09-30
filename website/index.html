@@ -13,11 +13,7 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/custom.css">
-        <link href='https://fonts.googleapis.com/css?family=Rochester' rel='stylesheet' type='text/css'>
-        <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-        <script src="//www.parsecdn.com/js/parse-1.5.0.min.js"></script>
 
         <script src="http://code.createjs.com/easeljs-0.8.1.min.js"></script>
         <script src="http://code.createjs.com/tweenjs-0.6.1.min.js"></script>
@@ -43,47 +39,62 @@
     </head>
     <body onload="init();" >
 
+
+      	<canvas class="centered shadowed" id="canvas" width="1000" height="800" style="background-color:rgba(0,0,0,0)"></canvas>
+
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <div class="main-content">
-          <canvas class="centered shadowed" id="canvas" width="1000" height="800" style="background-color:rgba(0,0,0,0)"></canvas>
 
-          <div class="scroll centered">
+        <div class="content-half" id="entry">
 
-            <div class="RSVP" id="entry">
-
-              <h2> Rsvp </h2>
-
-              <div id="thank-you"> Thank you! </div>
-
-              <div class="copy">
-
-              </div>
-
-              <form id = "entry-form">
-                  <div class="error"></div>
-                  <input type="text" class="field small" placeholder="Full Name" id="form-name" required/>
-                  <input type="text" class="field small" placeholder="Number of Guests (Including You)" id="form-guests" required/>
-                  <input type="text" class="field small" placeholder="Email or Phone" id="form-contact" required/>
-                  <input type="text" class="field small" placeholder="Anything Else?" id="form-comments" />
-                  <button> Submit </button>
-              </form>
-            </div>
-
-            <a href="img/map.jpg">
-              <img id="map" class="centered shadowed" src="img/map.jpg">
-            </a>
-
+          <h2> RSVP </h2>
+          <div class="copy">
+            <p>Thank you</p>
           </div>
 
+          <form id = "entry-form">
+
+            <div class="field-container">
+              <div class="error"></div>
+              <textarea id="form-answer"  placeholder="25 words or less.." maxlength=350 onKeyUp="countWords(event,this.value);" required></textarea>
+              <input type="text" class="field small" placeholder="First Name" id="form-first-name" required/>
+              <input type="text" class="field small" placeholder="Last Name" id="form-last-name" required/>
+              <input type="text" class="field small" placeholder="Mobile Number" id="form-mobile" required/>
+              <input type="email" class="field small" placeholder="Email Address" id="form-email" required/>
+            </div>
+
+            <div class="checkbox-container">
+              <div class="checkbox">
+                <input type="checkbox" id="check-over18" required/>
+                <span class="checkbox-text">
+                  I am 18 or over and have read and agree to the <a href="#modal">Terms & Conditions</a> and <a href="http://www.bottlemart.com.au/privacy-policy" target="_blank">Privacy Policy</a>.
+                </span>
+              </div>
+              <div class="checkbox">
+                <input type="checkbox"  id="check-communications" />
+                <span class="checkbox-text">
+                Please send me news and promotions from Casella Family Brands
+                </span>
+              </div>
+              <div class="checkbox">
+                <input type="checkbox"  id="check-personal"/>
+                <span class="checkbox-text">
+                I give consent to the processing of my personal data for promotional activities by Liquor Marketing Group
+                as detailed in the <a href="http://www.bottlemart.com.au/privacy-policy" target="_blank"> Privacy Policies </a>.
+                </span>
+              </div>
+              <button> Enter </button>
+            </div>
+
+          </form>
         </div>
+
         <br>
         <br>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
-        <script src="js/vendor/jquery.placeholder.min.js"></script>
         <script src="js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
