@@ -39,6 +39,13 @@ $( document ).ready(function() {
         }
       });
     });
+
+    $('#chicken-photos').slick({
+      dots:true,
+      adaptiveHeight: true,
+      autoplay: true,
+      autoplaySpeed: 2000
+    });
 });
 
 function showMessage(error){
