@@ -17,7 +17,6 @@ $( document ).ready(function() {
 
   		var data = {};
   		data.invitee_name = $("#form-name").val();
-      data.guests = $("#form-guests").val();
   		data.contact = $("#form-contact").val();
       data.comments = $("#form-comments").val();
       // ========= Validation ==============

@@ -34,6 +34,15 @@ body{
   margin-top: 10px;
 }
 
+#event-info{
+  color:white;
+  font-size: 2em;
+  font-family: 'Rochester', cursive;
+  font-weight: lighter;
+  margin: 0px;
+  margin-top: 45px;
+}
+
 .RSVP *{
   display: block;
   text-align: center;
@@ -76,15 +85,20 @@ body{
   border-radius: 25px;
   background-color: white;
   border: none;
-  margin-top: 40px;
+  margin-top: 20px;
   color: #989898;
   font-weight: bold;
   font-size: 1.5em;
   font-family: 'Rochester', cursive;
 }
 
+#entry-form #form-comments{
+  height: 70px;
+
+}
+
 #map{
-  margin-top: 100px;
+  margin-top: 45px;
   max-width: 650px;
 }
 
